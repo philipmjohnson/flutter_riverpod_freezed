@@ -4,7 +4,7 @@ This repo contains a modified fork of <https://github.com/red-star25/riverpod_ex
 
 This code demonstrates the use of [Riverpod](https://riverpod.dev/) for state management, [Freezed](https://pub.dev/packages/freezed) to generate the data model classes, and [Dio](https://pub.dev/packages/dio) to access an external service.
 
-In this fork, I have eliminated some superfluous dependencies (related to internationalization and screen utilities) from the original code so that it more clearly focuses on Riverpod, Freezed, and Dio. I've also updated all the packages and made other minor code changes so that the code runs correctly as of Fall, 2023. 
+In this fork, I have eliminated some dependencies (related to internationalization and screen utilities) from the original code so that it more clearly focuses on Riverpod, Freezed, and Dio. I've also updated all the packages and made other minor code changes so that the code runs correctly as of Fall, 2023. 
 
 ## Screenshots
 
@@ -17,6 +17,8 @@ In this fork, I have eliminated some superfluous dependencies (related to intern
 </p>
 
 ## Design of the Joke Page
+
+While the code provides both a "Joke" and "Products" page, I think you can get a good initial understanding of Riverpod, Freezed, and Dio by focusing just on the Joke page. 
 
 The Joke page displays a joke retrieved from a Joke API service when a button is pushed. It provides an implementation of a good design pattern for real-time retrieval of data from an external, non-Firebase data source.  
 
