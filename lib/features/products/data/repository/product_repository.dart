@@ -16,7 +16,7 @@ class ProductRepository {
       final productModel =
           (res as List).map((e) => ProductModel.fromJson(e)).toList();
       return productModel;
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       final errorMessage = DioExceptions.fromDioError(e);
       log(errorMessage.toString());
       rethrow;
