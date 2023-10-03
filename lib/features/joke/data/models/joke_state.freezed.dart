@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'joke_state.dart';
 
@@ -72,10 +72,11 @@ class _$JokeStateCopyWithImpl<$Res, $Val extends JokeState>
 }
 
 /// @nodoc
-abstract class _$$_JokeStateCopyWith<$Res> implements $JokeStateCopyWith<$Res> {
-  factory _$$_JokeStateCopyWith(
-          _$_JokeState value, $Res Function(_$_JokeState) then) =
-      __$$_JokeStateCopyWithImpl<$Res>;
+abstract class _$$JokeStateImplCopyWith<$Res>
+    implements $JokeStateCopyWith<$Res> {
+  factory _$$JokeStateImplCopyWith(
+          _$JokeStateImpl value, $Res Function(_$JokeStateImpl) then) =
+      __$$JokeStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({JokeModel joke, bool isLoading});
@@ -85,11 +86,11 @@ abstract class _$$_JokeStateCopyWith<$Res> implements $JokeStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_JokeStateCopyWithImpl<$Res>
-    extends _$JokeStateCopyWithImpl<$Res, _$_JokeState>
-    implements _$$_JokeStateCopyWith<$Res> {
-  __$$_JokeStateCopyWithImpl(
-      _$_JokeState _value, $Res Function(_$_JokeState) _then)
+class __$$JokeStateImplCopyWithImpl<$Res>
+    extends _$JokeStateCopyWithImpl<$Res, _$JokeStateImpl>
+    implements _$$JokeStateImplCopyWith<$Res> {
+  __$$JokeStateImplCopyWithImpl(
+      _$JokeStateImpl _value, $Res Function(_$JokeStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -98,7 +99,7 @@ class __$$_JokeStateCopyWithImpl<$Res>
     Object? joke = null,
     Object? isLoading = null,
   }) {
-    return _then(_$_JokeState(
+    return _then(_$JokeStateImpl(
       joke: null == joke
           ? _value.joke
           : joke // ignore: cast_nullable_to_non_nullable
@@ -113,8 +114,8 @@ class __$$_JokeStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_JokeState implements _JokeState {
-  _$_JokeState({this.joke = const JokeModel(), this.isLoading = true});
+class _$JokeStateImpl implements _JokeState {
+  _$JokeStateImpl({this.joke = const JokeModel(), this.isLoading = true});
 
   @override
   @JsonKey()
@@ -132,7 +133,7 @@ class _$_JokeState implements _JokeState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_JokeState &&
+            other is _$JokeStateImpl &&
             (identical(other.joke, joke) || other.joke == joke) &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading));
@@ -144,13 +145,13 @@ class _$_JokeState implements _JokeState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_JokeStateCopyWith<_$_JokeState> get copyWith =>
-      __$$_JokeStateCopyWithImpl<_$_JokeState>(this, _$identity);
+  _$$JokeStateImplCopyWith<_$JokeStateImpl> get copyWith =>
+      __$$JokeStateImplCopyWithImpl<_$JokeStateImpl>(this, _$identity);
 }
 
 abstract class _JokeState implements JokeState {
   factory _JokeState({final JokeModel joke, final bool isLoading}) =
-      _$_JokeState;
+      _$JokeStateImpl;
 
   @override
   JokeModel get joke;
@@ -158,6 +159,6 @@ abstract class _JokeState implements JokeState {
   bool get isLoading;
   @override
   @JsonKey(ignore: true)
-  _$$_JokeStateCopyWith<_$_JokeState> get copyWith =>
+  _$$JokeStateImplCopyWith<_$JokeStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

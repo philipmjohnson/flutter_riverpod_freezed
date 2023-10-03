@@ -2,9 +2,9 @@
 
 This is a fork of <https://github.com/red-star25/riverpod_example>.  He wrote a blog post to explain the code at: <https://dhruvnakum.xyz/flutter-riverpod-effortlessly-managing-api-calls-in-your-app>
 
-This code demonstrates the use of Riverpod for state management and freezed to generate the data model classes.
+This code demonstrates the use of Riverpod for state management, Freezed to generate the data model classes, and Dio to access an external service.
 
-In this fork, I mainly edit the README to provide better documentation for the code.
+In this fork, I have eliminated some superfluous dependencies (for internationalization and screen utilities) to more clearly focus on just Riverpod and Freezed. 
 
 ## Screenshots
 
@@ -15,12 +15,6 @@ In this fork, I mainly edit the README to provide better documentation for the c
    &nbsp;
   <img src="https://github.com/philipmjohnson/flutter_riverpod_freezed/raw/main/README-products.png" width="30%">
 </p>
-
-## External packages
-
-* Uses <https://pub.dev/packages/flutter_gen_runner> to provide enumerated constants for accessing assets. (Even though there are no assets).
-
-* Uses <https://pub.dev/packages/dio> as an HTTP client for managing the HTTP requests to the Jokes and Store cloud-based services. 
 
 ## Design of the Joke Page
 

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'product_model.dart';
 
@@ -80,22 +80,22 @@ class _$ProductModelCopyWithImpl<$Res, $Val extends ProductModel>
 }
 
 /// @nodoc
-abstract class _$$_ProductModelCopyWith<$Res>
+abstract class _$$ProductModelImplCopyWith<$Res>
     implements $ProductModelCopyWith<$Res> {
-  factory _$$_ProductModelCopyWith(
-          _$_ProductModel value, $Res Function(_$_ProductModel) then) =
-      __$$_ProductModelCopyWithImpl<$Res>;
+  factory _$$ProductModelImplCopyWith(
+          _$ProductModelImpl value, $Res Function(_$ProductModelImpl) then) =
+      __$$ProductModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? id, String? title, double? price, bool isFavourite});
 }
 
 /// @nodoc
-class __$$_ProductModelCopyWithImpl<$Res>
-    extends _$ProductModelCopyWithImpl<$Res, _$_ProductModel>
-    implements _$$_ProductModelCopyWith<$Res> {
-  __$$_ProductModelCopyWithImpl(
-      _$_ProductModel _value, $Res Function(_$_ProductModel) _then)
+class __$$ProductModelImplCopyWithImpl<$Res>
+    extends _$ProductModelCopyWithImpl<$Res, _$ProductModelImpl>
+    implements _$$ProductModelImplCopyWith<$Res> {
+  __$$ProductModelImplCopyWithImpl(
+      _$ProductModelImpl _value, $Res Function(_$ProductModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -106,7 +106,7 @@ class __$$_ProductModelCopyWithImpl<$Res>
     Object? price = freezed,
     Object? isFavourite = null,
   }) {
-    return _then(_$_ProductModel(
+    return _then(_$ProductModelImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -129,11 +129,12 @@ class __$$_ProductModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ProductModel implements _ProductModel {
-  _$_ProductModel({this.id, this.title, this.price, this.isFavourite = false});
+class _$ProductModelImpl implements _ProductModel {
+  _$ProductModelImpl(
+      {this.id, this.title, this.price, this.isFavourite = false});
 
-  factory _$_ProductModel.fromJson(Map<String, dynamic> json) =>
-      _$$_ProductModelFromJson(json);
+  factory _$ProductModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ProductModelImplFromJson(json);
 
   @override
   final int? id;
@@ -154,7 +155,7 @@ class _$_ProductModel implements _ProductModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProductModel &&
+            other is _$ProductModelImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.price, price) || other.price == price) &&
@@ -169,12 +170,12 @@ class _$_ProductModel implements _ProductModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProductModelCopyWith<_$_ProductModel> get copyWith =>
-      __$$_ProductModelCopyWithImpl<_$_ProductModel>(this, _$identity);
+  _$$ProductModelImplCopyWith<_$ProductModelImpl> get copyWith =>
+      __$$ProductModelImplCopyWithImpl<_$ProductModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ProductModelToJson(
+    return _$$ProductModelImplToJson(
       this,
     );
   }
@@ -185,10 +186,10 @@ abstract class _ProductModel implements ProductModel {
       {final int? id,
       final String? title,
       final double? price,
-      final bool isFavourite}) = _$_ProductModel;
+      final bool isFavourite}) = _$ProductModelImpl;
 
   factory _ProductModel.fromJson(Map<String, dynamic> json) =
-      _$_ProductModel.fromJson;
+      _$ProductModelImpl.fromJson;
 
   @override
   int? get id;
@@ -200,6 +201,6 @@ abstract class _ProductModel implements ProductModel {
   bool get isFavourite;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductModelCopyWith<_$_ProductModel> get copyWith =>
+  _$$ProductModelImplCopyWith<_$ProductModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
