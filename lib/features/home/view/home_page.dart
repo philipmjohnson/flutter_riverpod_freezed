@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -12,20 +11,20 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('title'.tr()),
+        title: const Text("Riverpod/Freezed"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             HomeButton(
-                title: 'jokes'.tr(),
+                title: 'jokes',
                 onTap: () {
                   Navigator.of(context).pushNamed(Routes.joke);
                 }),
             Gap(20.h),
             HomeButton(
-                title: 'products'.tr(),
+                title: 'products',
                 onTap: () {
                   Navigator.of(context).pushNamed(Routes.product);
                 }),
