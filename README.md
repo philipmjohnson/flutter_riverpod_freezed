@@ -34,6 +34,14 @@ The Joke page displays a joke retrieved from a Joke API service when a button is
 
 For the data model, JokeModel and JokeState are generated using Freezed.
 
+## Installation
+
+Download the repo, cd into the flutter_riverpod_freezed directory, and invoke:
+
+```
+flutter run
+```
+
 ## Source code
 
 The source code is available at: <https://github.com/philipmjohnson/flutter_riverpod_freezed>.
