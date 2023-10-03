@@ -3,7 +3,7 @@ import 'package:riverpod_api/features/products/data/model/product_model.dart';
 import 'package:riverpod_api/features/products/provider/product_provider.dart';
 
 class ProductsNotifier extends StateNotifier<List<ProductModel>> {
-  // Fetching all products whenever anyone starts listning.
+  // Fetching all products whenever anyone starts listening.
   // Passing Ref, in order to access other providers inside this.
   ProductsNotifier({required this.ref}) : super([]) {
     fetchProducts(ref: ref);

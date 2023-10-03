@@ -15,9 +15,7 @@ dependencies:
   dio: ">=4.0.6"
   flutter_riverpod: ">=2.1.1"
   freezed_annotation: ">=2.2.0"
-  equatable: ">=2.0.5"
   json_annotation: ">=4.7.0"
-  # gap: ">=2.0.1"
   shared_preferences: ^2.2.1
 
 dev_dependencies:
