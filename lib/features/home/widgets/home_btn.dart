@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeButton extends StatelessWidget {
   const HomeButton({
@@ -12,7 +11,7 @@ class HomeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 80.h,
+      height: 80,
       width: MediaQuery.of(context).size.width * .8,
       child: ElevatedButton(onPressed: onTap, child: Text(title)),
     );

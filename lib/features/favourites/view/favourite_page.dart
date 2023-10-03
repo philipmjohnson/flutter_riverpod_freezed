@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gap/gap.dart';
 import 'package:riverpod_api/features/favourites/provider/favourite_provider.dart';
 import 'package:riverpod_api/features/products/provider/product_provider.dart';
 
@@ -19,7 +17,7 @@ class FavouriteProductsPage extends ConsumerWidget {
           ? ListView.separated(
               itemCount: data.length,
               separatorBuilder: (BuildContext context, int index) {
-                return Gap(10.h);
+                return const SizedBox(height: 10);
               },
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(

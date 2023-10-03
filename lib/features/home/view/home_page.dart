@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gap/gap.dart';
 import 'package:riverpod_api/features/home/widgets/home_btn.dart';
 import 'package:riverpod_api/routes/routes.dart';
 
@@ -22,7 +20,7 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context).pushNamed(Routes.joke);
                 }),
-            Gap(20.h),
+            const SizedBox(height: 20),
             HomeButton(
                 title: 'products',
                 onTap: () {

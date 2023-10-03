@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:riverpod_api/features/home/view/home_page.dart';
 import 'package:riverpod_api/routes/app_routes.dart';
 import 'package:riverpod_api/routes/routes.dart';
@@ -18,12 +17,10 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      builder: (context, child) => MaterialApp(
-        home: const HomePage(),
-        initialRoute: Routes.home,
-        routes: AppRoutes.routes,
-      ),
+    return MaterialApp(
+      home: const HomePage(),
+      initialRoute: Routes.home,
+      routes: AppRoutes.routes,
     );
   }
 }
